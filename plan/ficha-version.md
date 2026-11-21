@@ -1,4 +1,4 @@
-# Ficha de verificación de versión · Grupo 04 B
+# Ficha de verificación de versión · Grupo 04 A
 
 Distribuciones del grupo 04: 
 
