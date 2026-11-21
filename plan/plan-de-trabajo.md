@@ -1,4 +1,4 @@
-# Plan de trabajo · Grupo 04 B
+# Plan de trabajo · Grupo 04 A
 
 ## Integrantes y partes
 
