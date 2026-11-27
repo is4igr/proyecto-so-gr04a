@@ -1,7 +1,20 @@
-# proyecto-so-gr04b
-Proyecto final de Sistemas Operativos - Semestre 3 - Grupo 04 A
+# Proyecto Final de Sistemas Operativos - Grupo 04A
 
-# Integrantes 
-Isaí Gómez Rengifo
+Universidad del Valle  
+Semestre 2026-2
 
-David Andres Hernandez 
+## Integrantes
+
+- Isaí Gómez Rengifo
+- David Andrés Hernández
+
+## Distribuciones asignadas
+
+- Máquina virtual gráfica: Debian.
+- Máquina virtual de consola: AlmaLinux.
+- Imagen base de Docker: Rocky Linux.
+
+## Planificación
+
+- [Plan de trabajo](plan/plan-de-trabajo.md)
+- [Ficha de versiones](plan/ficha-version.md)
