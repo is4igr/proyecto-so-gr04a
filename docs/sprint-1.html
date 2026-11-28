@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprint 1 - Montaje · Grupo 04A</title>
+    <style>
+        :root {
+            --primary-color: #c8102e; /* Rojo institucional Univalle */
+            --secondary-color: #1e293b;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-color: #334155;
+            --border-color: #e2e8f0;
+            --link-color: #0284c7;
+            --link-hover: #0369a1;
+            --code-bg: #f1f5f9;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: var(--card-bg);
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        .nav-back {
+            display: inline-block;
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+            color: var(--link-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .nav-back:hover {
+            color: var(--link-hover);
+            text-decoration: underline;
+        }
+
+        header {
+            border-bottom: 3px solid var(--primary-color);
+            padding-bottom: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            color: var(--secondary-color);
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.05rem;
+            color: #64748b;
+            font-weight: 500;
+        }
+
+        .intro-box {
+            background-color: #f8fafc;
+            border-left: 4px solid var(--primary-color);
+            padding: 1rem 1.25rem;
+            margin-bottom: 2rem;
+            border-radius: 0 8px 8px 0;
+            color: var(--secondary-color);
+        }
+
+        h2 {
+            color: var(--secondary-color);
+            font-size: 1.4rem;
+            margin-top: 2.2rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.4rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .placeholder-section {
+            background-color: #f8fafc;
+            border: 1px dashed #cbd5e1;
+            border-radius: 8px;
+            padding: 1.5rem;
+            color: #64748b;
+            font-style: italic;
+            font-size: 0.95rem;
+        }
+
+        pre {
+            background-color: #0f172a;
+            color: #f8fafc;
+            padding: 1rem 1.25rem;
+            border-radius: 8px;
+            overflow-x: auto;
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+            font-size: 0.88rem;
+            margin: 1rem 0;
+        }
+
+        code {
+            background-color: var(--code-bg);
+            padding: 0.15rem 0.4rem;
+            border-radius: 4px;
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+            font-size: 0.85em;
+            color: #0f172a;
+        }
+
+        pre code {
+            background-color: transparent;
+            padding: 0;
+            color: inherit;
+        }
+
+        .table-wrapper {
+            overflow-x: auto;
+            margin-top: 1rem;
+            margin-bottom: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 0.9rem 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+            vertical-align: top;
+        }
+
+        th {
+            background-color: var(--secondary-color);
+            color: #ffffff;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.82rem;
+            letter-spacing: 0.05em;
+        }
+
+        th:last-child, td:last-child {
+            text-align: center;
+            width: 110px;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f1f5f9;
+        }
+
+        @media (max-width: 650px) {
+            .container {
+                padding: 1.5rem;
+            }
+            h1 {
+                font-size: 1.6rem;
+            }
+            th, td {
+                padding: 0.7rem;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <a href="index.html" class="nav-back">← Volver al inicio</a>
+
+        <header>
+            <h1>Sprint 1 - Montaje</h1>
+            <p class="subtitle">Proyecto Final de Sistemas Operativos · Grupo 04A · Universidad del Valle</p>
+        </header>
+
+        <div class="intro-box">
+            En este sprint nos dedicaremos a la creación de las máquinas virtuales, mostrando los comandos, la conexión de red con sus respectivas capturas.
+        </div>
+
+        <section>
+            <h2>1. VM gráfica (Debian)</h2>
+            <div class="placeholder-section">
+                Esto aun esta incompleto.
+            </div>
+        </section>
+
+        <section>
+            <h2>2. VM Consola (AlmaLinux)</h2>
+            <div class="placeholder-section">
+                Esto aun esta incompleto.
+            </div>
+        </section>
+
+        <section>
+            <h2>3. Red</h2>
+            <div class="placeholder-section">
+                Esto aun esta incompleto.
+            </div>
+        </section>
+
+        <section>
+            <h2>4. SSH</h2>
+            <div class="placeholder-section">
+                Esto aun esta incompleto.
+            </div>
+        </section>
+
+        <section>
+            <h2>5. Capturas</h2>
+            <div class="placeholder-section">
+                Esto aun esta incompleto.
+            </div>
+        </section>
+
+        <section>
+            <h2>6. Link del video</h2>
+            <div class="placeholder-section">
+                Esto aun esta incompleto.
+            </div>
+        </section>
+
+        <section>
+            <h2>7. Lo que hizo cada integrante en este sprint</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Integrante</th>
+                            <th>Qué hizo</th>
+                            <th>Commits</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Isaí</strong></td>
+                            <td>Creó las páginas del sitio y revisó la ficha</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Andres</strong></td>
+                            <td>Instaló y configuró las dos VMs, la red, SSH y las instantáneas</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Isaí</strong></td>
+                            <td>Instaló las herramientas en la consola, grabó el video y subió las capturas al sitio</td>
+                            <td>2</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
