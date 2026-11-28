@@ -222,8 +222,8 @@ Estado: pendiente de incorporar el enlace del video de YouTube.
 | Integrante | Qué hizo | Commits |
 |---|---|---|
 | Isaí | Creó las páginas del sitio y revisó la ficha | 2 |
-| Andres | Instaló y configuró las dos VMs, la red, SSH y las instantáneas | 3 |
-| Isaí | Instaló las herramientas en la consola, grabó el video y subió las capturas al sitio |
+| Andres | Instaló y configuró las dos VMs, la red, SSH y las instantáneas y subió las capturas al sitio | 3 |
+| Isaí | Instaló las herramientas en la consola, grabó el video |
 
 ## 9. Resultados del sprint
 
