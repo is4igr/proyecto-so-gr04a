@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan de trabajo · Grupo 04A</title>
+    <style>
+        :root {
+            --primary-color: #c8102e; /* Rojo institucional Univalle */
+            --secondary-color: #1e293b;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-color: #334155;
+            --border-color: #e2e8f0;
+            --link-color: #0284c7;
+            --link-hover: #0369a1;
+            --code-bg: #f1f5f9;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: var(--card-bg);
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        .nav-back {
+            display: inline-block;
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+            color: var(--link-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .nav-back:hover {
+            color: var(--link-hover);
+            text-decoration: underline;
+        }
+
+        header {
+            border-bottom: 3px solid var(--primary-color);
+            padding-bottom: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            color: var(--secondary-color);
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.05rem;
+            color: #64748b;
+            font-weight: 500;
+        }
+
+        h2 {
+            color: var(--secondary-color);
+            font-size: 1.4rem;
+            margin-top: 2.2rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.4rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        .note-box {
+            background-color: #f8fafc;
+            border-left: 4px solid var(--primary-color);
+            padding: 0.9rem 1.2rem;
+            margin-top: 1rem;
+            border-radius: 0 6px 6px 0;
+            font-weight: 500;
+            color: var(--secondary-color);
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0.5rem;
+        }
+
+        li {
+            margin-bottom: 0.65rem;
+            position: relative;
+            padding-left: 1.2rem;
+        }
+
+        li::before {
+            content: "•";
+            color: var(--primary-color);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        code {
+            background-color: var(--code-bg);
+            padding: 0.15rem 0.4rem;
+            border-radius: 4px;
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+            font-size: 0.85em;
+            color: #0f172a;
+        }
+
+        .table-wrapper {
+            overflow-x: auto;
+            margin-top: 1rem;
+            margin-bottom: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 0.9rem 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+            vertical-align: top;
+        }
+
+        th {
+            background-color: var(--secondary-color);
+            color: #ffffff;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.82rem;
+            letter-spacing: 0.05em;
+            white-space: nowrap;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f1f5f9;
+        }
+
+        @media (max-width: 650px) {
+            .container {
+                padding: 1.5rem;
+            }
+            h1 {
+                font-size: 1.6rem;
+            }
+            th, td {
+                padding: 0.7rem;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <a href="../index.html" class="nav-back">← Volver al inicio</a>
+
+        <header>
+            <h1>Plan de trabajo · Grupo 04A</h1>
+            <p class="subtitle">Proyecto Final de Sistemas Operativos · Universidad del Valle</p>
+        </header>
+
+        <section>
+            <h2>Integrantes</h2>
+            <ul>
+                <li>Isaí Gómez Rengifo</li>
+                <li>David Andrés Hernández</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Distribución de responsabilidades</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Integrante</th>
+                            <th>Rol</th>
+                            <th>Actividades</th>
+                            <th>Archivos propios</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Isaí</strong></td>
+                            <td>Coordinación y repositorio</td>
+                            <td>Organización del repositorio, publicación del sitio web, apoyo en las máquinas virtuales y validación de evidencias.</td>
+                            <td><code>README.md</code>, <code>plan/</code>, <code>index.md</code></td>
+                        </tr>
+                        <tr>
+                            <td><strong>David</strong></td>
+                            <td>Máquinas virtuales y red</td>
+                            <td>Instalación de Debian y AlmaLinux, particionado manual, configuración de red, SSH e instantáneas.</td>
+                            <td><code>sprint-1.md</code>, <code>capturas-vm/</code></td>
+                        </tr>
+                        <tr>
+                            <td><strong>David</strong></td>
+                            <td>Administración de sistemas</td>
+                            <td>Configuración de usuarios, permisos, firewall y gestión de procesos.</td>
+                            <td><code>sprint-2.md</code>, <code>scripts/</code></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Isaí</strong></td>
+                            <td>Docker y Kubernetes</td>
+                            <td>Configuración de Docker, creación de imágenes y despliegue en Kubernetes.</td>
+                            <td><code>docker/</code>, <code>sprint-3.md</code></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="note-box">Ambos integrantes participarán en las pruebas, documentación, videos y sustentación del proyecto.</p>
+        </section>
+
+        <section>
+            <h2>Distribuciones asignadas</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tipo</th>
+                            <th>Distribución</th>
+                            <th>Nombre</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>VM gráfica</td>
+                            <td>Debian</td>
+                            <td><code>g04a-grafica</code></td>
+                        </tr>
+                        <tr>
+                            <td>VM consola</td>
+                            <td>AlmaLinux</td>
+                            <td><code>g04a-consola</code></td>
+                        </tr>
+                        <tr>
+                            <td>Imagen base Docker</td>
+                            <td>Rocky Linux</td>
+                            <td>Por definir</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section>
+            <h2>Fechas de los sprints</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Sprint</th>
+                            <th>Fecha de cierre</th>
+                            <th>Entregable</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Sprint 0 - Arranque</strong></td>
+                            <td>20 de noviembre de 2026</td>
+                            <td>Repositorio y planificación</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Sprint 1 - Montaje</strong></td>
+                            <td>27 de noviembre de 2026</td>
+                            <td>Máquinas virtuales, red, SSH e instantáneas</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Sprint 2 - Servicios</strong></td>
+                            <td>11 de diciembre de 2026</td>
+                            <td>Usuarios, firewall, scripts, procesos y Docker</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Sprint 3 - Cierre</strong></td>
+                            <td>18 de diciembre de 2026</td>
+                            <td>Docker Hub, Kubernetes y sitio web</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Sustentación</strong></td>
+                            <td>19 de diciembre de 2026</td>
+                            <td>Presentación grupal y prueba individual</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section>
+            <h2>Reglas del grupo</h2>
+            <ul>
+                <li>Cada integrante realizará mínimo dos commits propios por sprint, a partir del Sprint 1.</li>
+                <li>Los mensajes de los commits deberán describir los cambios realizados.</li>
+                <li>Ambos integrantes participarán en los videos.</li>
+                <li>Las evidencias serán reales, completas y sin modificaciones.</li>
+                <li>Cada integrante será responsable de sus archivos y coordinará los cambios con su compañero.</li>
+                <li>Se declarará el uso de herramientas de inteligencia artificial según las instrucciones del docente.</li>
+            </ul>
+        </section>
+    </div>
+
+</body>
+</html>
