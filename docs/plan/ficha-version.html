@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha de verificación de versión · Grupo 04A</title>
+    <style>
+        :root {
+            --primary-color: #c8102e; /* Rojo institucional Univalle */
+            --secondary-color: #1e293b;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-color: #334155;
+            --border-color: #e2e8f0;
+            --link-color: #0284c7;
+            --link-hover: #0369a1;
+            --code-bg: #f1f5f9;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            background-color: var(--card-bg);
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        .nav-back {
+            display: inline-block;
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+            color: var(--link-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .nav-back:hover {
+            color: var(--link-hover);
+            text-decoration: underline;
+        }
+
+        header {
+            border-bottom: 3px solid var(--primary-color);
+            padding-bottom: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            color: var(--secondary-color);
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.05rem;
+            color: #64748b;
+            font-weight: 500;
+        }
+
+        .summary-box {
+            background-color: #f8fafc;
+            border-left: 4px solid var(--primary-color);
+            padding: 1rem 1.25rem;
+            margin-bottom: 2rem;
+            border-radius: 0 8px 8px 0;
+            color: var(--secondary-color);
+        }
+
+        h2 {
+            color: var(--secondary-color);
+            font-size: 1.4rem;
+            margin-top: 2.2rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.4rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        a {
+            color: var(--link-color);
+            text-decoration: none;
+            font-weight: 500;
+            word-break: break-word;
+        }
+
+        a:hover {
+            color: var(--link-hover);
+            text-decoration: underline;
+        }
+
+        code {
+            background-color: var(--code-bg);
+            padding: 0.15rem 0.4rem;
+            border-radius: 4px;
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+            font-size: 0.85em;
+            color: #0f172a;
+        }
+
+        .table-wrapper {
+            overflow-x: auto;
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 0.9rem 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+            vertical-align: top;
+        }
+
+        th {
+            background-color: var(--secondary-color);
+            color: #ffffff;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.82rem;
+            letter-spacing: 0.05em;
+        }
+
+        th:nth-child(1) { width: 26%; }
+        th:nth-child(2) { width: 44%; }
+        th:nth-child(3) { width: 30%; }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f1f5f9;
+        }
+
+        @media (max-width: 700px) {
+            .container {
+                padding: 1.5rem;
+            }
+            h1 {
+                font-size: 1.6rem;
+            }
+            th, td {
+                padding: 0.75rem;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <a href="../index.html" class="nav-back">← Volver al inicio</a>
+
+        <header>
+            <h1>Ficha de verificación de versión · Grupo 04A</h1>
+            <p class="subtitle">Proyecto Final de Sistemas Operativos · Universidad del Valle</p>
+        </header>
+
+        <div class="summary-box">
+            <strong>Distribuciones del grupo 04:</strong> Debian (Gráfica), AlmaLinux (Consola) y Rocky Linux (Imagen base).
+        </div>
+
+        <section>
+            <h2>Debian (VM de gráfica)</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Pregunta</th>
+                            <th>Respuesta</th>
+                            <th>Enlace donde lo comprobamos</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Versión elegida y fecha de lanzamiento</strong></td>
+                            <td>Debian 13.8 ("Trixie"), publicada el 21 de noviembre de 2026.</td>
+                            <td><a href="https://www.debian.org/releases/trixie/" target="_blank" rel="noopener noreferrer">debian.org/releases/trixie</a></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Hasta cuándo recibe actualizaciones de seguridad</strong></td>
+                            <td>Recibe soporte completo de seguridad oficial hasta el 9 de agosto de 2028.</td>
+                            <td><a href="https://www.debian.org/releases/" target="_blank" rel="noopener noreferrer">debian.org/releases</a></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Requisitos de hardware y si funciona en VirtualBox</strong></td>
+                            <td>1 GB de RAM (2 GB recomendados) y 10 GB de disco. Funciona en VirtualBox perfectamente (con 2 GB de RAM y 2 CPU).</td>
+                            <td><a href="https://www.debian.org/releases/trixie/amd64/ch03s04.es.html" target="_blank" rel="noopener noreferrer">Guía de instalación Debian (Hardware)</a></td>
+                        </tr>
+                        <tr>
+                            <td><strong>¿El instalador permite particionado manual?</strong></td>
+                            <td>Sí. El instalador de Debian (<code>debian-installer</code>) cuenta con la opción «Manual» en la etapa de Particionado de discos, permitiendo configurar particiones, puntos de montaje, LVM o RAID a medida.</td>
+                            <td><a href="https://www.debian.org/releases/trixie/amd64/ch06s03.es.html#di-partition" target="_blank" rel="noopener noreferrer">Guía de instalación Debian (Particionado)</a></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Guía oficial para instalar Docker Engine en esa familia</strong></td>
+                            <td>Docker dispone de una guía y repositorio oficial exclusivo para Debian.</td>
+                            <td><a href="https://docs.docker.com/engine/install/debian/" target="_blank" rel="noopener noreferrer">docs.docker.com/engine/install/debian</a></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Imagen base del Dockerfile para esa versión</strong></td>
+                            <td>Existe la imagen oficial en Docker Hub (<code>debian</code>) con la etiqueta exacta de esta versión.</td>
+                            <td><a href="https://hub.docker.com/_/debian" target="_blank" rel="noopener noreferrer">hub.docker.com/_/debian</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section>
+            <h2>AlmaLinux (VM de consola)</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Pregunta</th>
+                            <th>Respuesta</th>
+                            <th>Enlace donde lo comprobamos</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Versión elegida y fecha de lanzamiento</strong></td>
+                            <td>AlmaLinux 10.3 ("Mauve Lion"), publicada el 24 de noviembre de 2025.</td>
+                            <td><a href="https://almalinux.org/get-almalinux/" target="_blank" rel="noopener noreferrer">almalinux.org/get-almalinux</a></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Hasta cuándo recibe actualizaciones de seguridad</strong></td>
+                            <td>Hasta el 31 de mayo de 2035.</td>
+                            <td><a href="https://wiki.almalinux.org/release-notes/" target="_blank" rel="noopener noreferrer">wiki.almalinux.org/release-notes</a></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Requisitos de hardware y si funciona en VirtualBox</strong></td>
+                            <td>1.5 GB de RAM (2 GB recomendados), 1 CPU y 10 GB de disco. Sí funciona en VirtualBox (con 2 GB de RAM y 2 CPU).</td>
+                            <td><a href="https://wiki.almalinux.org/documentation/installation-guide.html" target="_blank" rel="noopener noreferrer">wiki.almalinux.org/installation-guide</a></td>
+                        </tr>
+                        <tr>
+                            <td><strong>¿El instalador permite particionado manual?</strong></td>
+                            <td>Sí. El instalador (Anaconda) tiene la opción «Personalizada» en Destino de la instalación.</td>
+                            <td><a href="https://wiki.almalinux.org/documentation/installation-guide.html" target="_blank" rel="noopener noreferrer">wiki.almalinux.org/installation-guide</a></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Guía oficial para instalar Docker Engine en esa familia</strong></td>
+                            <td>Docker no tiene página propia para AlmaLinux; se usa la de la familia RHEL.</td>
+                            <td><a href="https://docs.docker.com/engine/install/rhel/" target="_blank" rel="noopener noreferrer">docs.docker.com/engine/install/rhel</a></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Imagen base del Dockerfile para esa versión</strong></td>
+                            <td>Existe la imagen oficial en Docker Hub (<code>almalinux</code>) con la etiqueta de la versión elegida (<code>almalinux:10.3</code>).</td>
+                            <td><a href="https://hub.docker.com/_/almalinux" target="_blank" rel="noopener noreferrer">hub.docker.com/_/almalinux</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section>
+            <h2>Rocky Linux (Imagen base de Dockerfile)</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Pregunta</th>
+                            <th>Respuesta</th>
+                            <th>Enlace donde lo comprobamos</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Versión elegida y fecha de lanzamiento</strong></td>
+                            <td>Rocky Linux 10.3 ("Red Quartz"), publicada el 16 de noviembre de 2026.</td>
+                            <td><a href="https://rockylinux.org/download" target="_blank" rel="noopener noreferrer">rockylinux.org/download</a></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Hasta cuándo recibe actualizaciones de seguridad</strong></td>
+                            <td>Hasta el 31 de mayo de 2035.</td>
+                            <td><a href="https://wiki.rockylinux.org/rocky/version/" target="_blank" rel="noopener noreferrer">wiki.rockylinux.org/rocky/version</a></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Requisitos de hardware y si funciona en VirtualBox</strong></td>
+                            <td>2 GB de RAM, 2 CPU y 10 GB de disco (20 GB recomendados). Sí funciona en VirtualBox (con 2 GB de RAM y 2 CPU).</td>
+                            <td><a href="https://docs.rockylinux.org/guides/installation/" target="_blank" rel="noopener noreferrer">docs.rockylinux.org/guides/installation</a></td>
+                        </tr>
+                        <tr>
+                            <td><strong>¿El instalador permite particionado manual?</strong></td>
+                            <td>Sí. El instalador (Anaconda) tiene la opción «Personalizada» en Destino de la instalación.</td>
+                            <td><a href="https://docs.rockylinux.org/guides/installation/" target="_blank" rel="noopener noreferrer">docs.rockylinux.org/guides/installation</a></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Guía oficial para instalar Docker Engine en esa familia</strong></td>
+                            <td>Docker no tiene página propia para Rocky Linux; se usa la de la familia RHEL.</td>
+                            <td><a href="https://docs.docker.com/engine/install/rhel/" target="_blank" rel="noopener noreferrer">docs.docker.com/engine/install/rhel</a></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Imagen base del Dockerfile para esa versión</strong></td>
+                            <td>Existe la imagen oficial en Docker Hub (<code>rockylinux</code>) con la etiqueta de la versión elegida (<code>rockylinux:10.3</code> o <code>rockylinux:10.1-minimal</code>).</td>
+                            <td><a href="https://hub.docker.com/_/rockylinux" target="_blank" rel="noopener noreferrer">hub.docker.com/_/rockylinux</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
