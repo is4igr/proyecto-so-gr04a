@@ -10,11 +10,14 @@ Semestre 2026-2
 
 ## Distribuciones asignadas
 
-- Máquina virtual gráfica: Debian.
-- Máquina virtual de consola: AlmaLinux.
-- Imagen base de Docker: Rocky Linux.
+| VM Grafica | VM Consola | Imagen base del Dockerfile |
+|---|---|---|
+| Debian | AlmaLinux | Rocky Linux |
 
 ## Planificación
 
 - [Plan de trabajo](plan/plan-de-trabajo.md)
 - [Ficha de versiones](plan/ficha-version.md)
+
+# Paginas del Proyecto
+- [Sprint 1](sprint-1.md).
